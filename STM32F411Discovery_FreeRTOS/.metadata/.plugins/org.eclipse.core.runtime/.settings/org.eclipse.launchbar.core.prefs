@@ -5,5 +5,3 @@ configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FreeRTOS_Stm32F4
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FreeRTOS_Stm32F411Disco\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FreeRTOS_Stm32F411Disco\ Debug/activeLaunchTarget=null\:---
-org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_Stm32F411Disco\ Debug/activeLaunchMode=debug
-org.eclipse.launchbar.core.descriptorType.default\:FreeRTOS_Stm32F411Disco\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

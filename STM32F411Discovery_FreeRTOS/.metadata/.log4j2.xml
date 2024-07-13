@@ -2,7 +2,7 @@
 <Configuration status="info">
     <ThresholdFilter level="INFO"/>
     <Appenders>
-        <RollingFile name="DEBUGFILE" fileName="C:/Users/Sbzrgn/Desktop/STM/STM32F411Discovery/STM32F411Discovery_FreeRTOS/.metadata/.ide.log" filePattern="C:/Users/Sbzrgn/Desktop/STM/STM32F411Discovery/STM32F411Discovery_FreeRTOS/.metadata/.ide.log-%d{yyyy-MM-dd}.log">
+        <RollingFile name="DEBUGFILE" fileName="C:/Users/Sbzrgn/Desktop/STM/STM32F411Discovery/My-STM32F411ve_Discovery/STM32F411Discovery_FreeRTOS/.metadata/.ide.log" filePattern="C:/Users/Sbzrgn/Desktop/STM/STM32F411Discovery/My-STM32F411ve_Discovery/STM32F411Discovery_FreeRTOS/.metadata/.ide.log-%d{yyyy-MM-dd}.log">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%p] %c{1}:%L - %m%n" />
             <Policies>
                 <TimeBasedTriggeringPolicy interval="1" modulate="true" />

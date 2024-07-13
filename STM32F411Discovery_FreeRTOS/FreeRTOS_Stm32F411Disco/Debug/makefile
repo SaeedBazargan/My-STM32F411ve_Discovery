@@ -64,8 +64,8 @@ all: main-build
 main-build: FreeRTOS_Stm32F411Disco.elf secondary-outputs
 
 # Tool invocations
-FreeRTOS_Stm32F411Disco.elf FreeRTOS_Stm32F411Disco.map: $(OBJS) $(USER_OBJS) C:\Users\Sbzrgn\Desktop\STM\STM32F411Discovery\STM32F411Discovery_FreeRTOS\FreeRTOS_Stm32F411Disco\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "FreeRTOS_Stm32F411Disco.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Sbzrgn\Desktop\STM\STM32F411Discovery\STM32F411Discovery_FreeRTOS\FreeRTOS_Stm32F411Disco\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRTOS_Stm32F411Disco.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+FreeRTOS_Stm32F411Disco.elf FreeRTOS_Stm32F411Disco.map: $(OBJS) $(USER_OBJS) C:\Users\Sbzrgn\Desktop\STM\STM32F411Discovery\My-STM32F411ve_Discovery\STM32F411Discovery_FreeRTOS\FreeRTOS_Stm32F411Disco\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "FreeRTOS_Stm32F411Disco.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Sbzrgn\Desktop\STM\STM32F411Discovery\My-STM32F411ve_Discovery\STM32F411Discovery_FreeRTOS\FreeRTOS_Stm32F411Disco\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRTOS_Stm32F411Disco.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -6,5 +6,5 @@
 ../Core/Src/main.c:238:6:HAL_GPIO_EXTI_Callback	2
 ../Core/Src/main.c:253:6:StartMainTask	2
 ../Core/Src/main.c:269:6:StartDefaultTask	1
-../Core/Src/main.c:290:6:HAL_TIM_PeriodElapsedCallback	2
-../Core/Src/main.c:307:6:Error_Handler	1
+../Core/Src/main.c:286:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:303:6:Error_Handler	1
