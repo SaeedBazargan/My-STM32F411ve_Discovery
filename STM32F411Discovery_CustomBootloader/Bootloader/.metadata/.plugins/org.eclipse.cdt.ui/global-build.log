@@ -1,0 +1,87 @@
+16:33:31 **** Incremental Build of configuration Debug for project Bootloader ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Bootloader.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Sbzrgn\Desktop\STM\STM32F411Discovery\STM32F411Discovery_Bootloader\Bootloader\Bootloader\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bootloader.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Bootloader.elf
+ 
+arm-none-eabi-size  Bootloader.elf 
+arm-none-eabi-objdump -h -S Bootloader.elf  > "Bootloader.list"
+arm-none-eabi-objcopy  -O ihex Bootloader.elf  "Bootloader.hex"
+   text	   data	    bss	    dec	    hex	filename
+  16016	    104	   2016	  18136	   46d8	Bootloader.elf
+arm-none-eabi-objcopy  -O binary Bootloader.elf  "Bootloader.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Bootloader.hex
+Finished building: Bootloader.bin
+ 
+ 
+Finished building: Bootloader.list
+ 
+16:35:56 **** Incremental Build of configuration Debug for project Bootloader ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Bootloader.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Sbzrgn\Desktop\STM\STM32F411Discovery\STM32F411Discovery_Bootloader\Bootloader\Bootloader\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bootloader.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Bootloader.elf
+ 
+arm-none-eabi-size  Bootloader.elf 
+arm-none-eabi-objdump -h -S Bootloader.elf  > "Bootloader.list"
+arm-none-eabi-objcopy  -O ihex Bootloader.elf  "Bootloader.hex"
+   text	   data	    bss	    dec	    hex	filename
+  16016	    104	   2016	  18136	   46d8	Bootloader.elf
+arm-none-eabi-objcopy  -O binary Bootloader.elf  "Bootloader.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Bootloader.bin
+Finished building: Bootloader.hex
+ 
+ 
+Finished building: Bootloader.list
+ 
+16:37:42 **** Incremental Build of configuration Debug for project Bootloader ****
+make -j4 all 
+arm-none-eabi-size  Bootloader.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16016	    104	   2016	  18136	   46d8	Bootloader.elf
+Finished building: default.size.stdout
+ 
+16:40:00 **** Incremental Build of configuration Debug for project Bootloader ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Bootloader.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Sbzrgn\Desktop\STM\STM32F411Discovery\STM32F411Discovery_Bootloader\Bootloader\Bootloader\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bootloader.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Bootloader.elf
+ 
+arm-none-eabi-size  Bootloader.elf 
+arm-none-eabi-objdump -h -S Bootloader.elf  > "Bootloader.list"
+arm-none-eabi-objcopy  -O ihex Bootloader.elf  "Bootloader.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15724	    104	   2016	  17844	   45b4	Bootloader.elf
+arm-none-eabi-objcopy  -O binary Bootloader.elf  "Bootloader.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Bootloader.bin
+Finished building: Bootloader.hex
+ 
+ 
+Finished building: Bootloader.list
+ 
+16:41:44 **** Incremental Build of configuration Debug for project Bootloader ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Bootloader.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Sbzrgn\Desktop\STM\STM32F411Discovery\STM32F411Discovery_Bootloader\Bootloader\Bootloader\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bootloader.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Bootloader.elf
+ 
+arm-none-eabi-size  Bootloader.elf 
+arm-none-eabi-objdump -h -S Bootloader.elf  > "Bootloader.list"
+arm-none-eabi-objcopy  -O ihex Bootloader.elf  "Bootloader.hex"
+   text	   data	    bss	    dec	    hex	filename
+  15316	    104	   2016	  17436	   441c	Bootloader.elf
+arm-none-eabi-objcopy  -O binary Bootloader.elf  "Bootloader.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Bootloader.hex
+Finished building: Bootloader.list
+Finished building: Bootloader.bin
+ 
+ 
+ 

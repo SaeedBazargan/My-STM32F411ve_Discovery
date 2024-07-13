@@ -1,0 +1,11 @@
+../Drivers/CMSIS/Include/core_cm4.h:2064:26:ITM_SendChar	16	static,ignoring_inline_asm
+../Core/Src/main.c:71:5:_write	32	static
+../Core/Src/main.c:87:5:main	8	static
+../Core/Src/main.c:139:6:SystemClock_Config	88	static
+../Core/Src/main.c:181:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:214:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:239:12:UART_Write_Loop	24	static
+../Core/Src/main.c:283:26:write_data_to_flash_app	40	static
+../Core/Src/main.c:352:13:Firmware_Update	1048	static
+../Core/Src/main.c:453:13:goto_application	16	static,ignoring_inline_asm
+../Core/Src/main.c:477:6:Error_Handler	4	static,ignoring_inline_asm
