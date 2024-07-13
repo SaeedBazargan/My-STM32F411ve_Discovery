@@ -271,11 +271,7 @@ void StartDefaultTask(void const * argument)
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
   for(;;)
-  {
-	  printf("Hello from Main task \n");
-	  osDelay(1000);
-	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-  }
+  {}
   /* USER CODE END 5 */
 }
 
