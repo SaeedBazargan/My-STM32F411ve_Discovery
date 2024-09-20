@@ -44,8 +44,11 @@
 /* Private variables ---------------------------------------------------------*/
 osThreadId defaultTaskHandle;
 /* USER CODE BEGIN PV */
-osThreadId mainTaskHandle;
+osThreadId 		mainTaskHandle;
+osThreadId 		transmitTaskHandle;
+osThreadId 		receiveTaskHandle;
 
+xQueueHandle 	simpleQueue;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -55,6 +58,8 @@ void StartDefaultTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
 void StartMainTask(void const * argument);
+void TransmitterTask(void const * argument);
+void ReceiverTask(void const * argument);
 
 /* USER CODE END PFP */
 
@@ -119,18 +124,31 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
+  simpleQueue = xQueueCreate(5, sizeof(int));
+
+  if(simpleQueue == 0)
+  {
+	  printf("Unable to create Integer Queue \n");
+  }
+  else
+  {
+	  printf("Integer Queue Created successfully \n");
+  }
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-//  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
-//  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   osThreadDef(mainTask, StartMainTask, osPriorityNormal, 0, 128);
   mainTaskHandle = osThreadCreate(osThread(mainTask), NULL);
 
+  osThreadDef(transmitTask, TransmitterTask, osPriorityNormal, 0, 128);
+  transmitTaskHandle = osThreadCreate(osThread(transmitTask), NULL);
+
+  osThreadDef(receiveTask, ReceiverTask, osPriorityNormal, 0, 128);
+  receiveTaskHandle = osThreadCreate(osThread(receiveTask), NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* Start scheduler */
@@ -265,6 +283,15 @@ void StartMainTask(void const * argument)
 	}
 }
 
+void TransmitterTask(void const * argument)
+{
+
+}
+
+void ReceiverTask(void const * argument)
+{
+
+}
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void const * argument)
 {

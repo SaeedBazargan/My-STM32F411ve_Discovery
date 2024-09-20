@@ -1,6 +1,1 @@
-2024-07-13 14:21:54,485 [INFO] Activator:176 - 
-
-
-2024-07-13 14:21:54,485 [INFO] Activator:177 - !SESSION log4j initialized
-2024-07-13 14:21:58,463 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
-2024-07-13 14:22:03,899 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2024-07-14 11:26:13,494 [INFO] WebApp:354 - JxBrowser engine has been closed 
