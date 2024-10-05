@@ -60,7 +60,6 @@ int _write(int file, char *ptr, int len)
 	for(i = 0; i < len; i++)
 	{
 		ITM_SendChar(*ptr++);
-
 	}
 	return len;
 }
