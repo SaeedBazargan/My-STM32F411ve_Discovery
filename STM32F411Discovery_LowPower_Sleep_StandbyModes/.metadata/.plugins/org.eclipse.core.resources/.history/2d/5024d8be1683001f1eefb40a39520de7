@@ -31,8 +31,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define SLEEP_Mode					0
-#define STANDBY_Mode				1
+#define SLEEP_Mode					1
+#define STANDBY_Mode				0
 #define STOP_Mode					0
 /* USER CODE END PD */
 
@@ -44,6 +44,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+char* str = {0};
 uint8_t count = 0;
 /* USER CODE END PV */
 
@@ -97,41 +98,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-#ifdef STANDBY_Mode
-  if(__HAL_PWR_GET_FLAG(PWR_FLAG_SB) != RESET)
-  {
-	  // If this flag is set means the MCU woke up from the standby mode
-	  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_SB);
-	  printf("wake up from the standby mode\n\r");
 
-	  for(uint8_t i = 0; i < 20; i++)
-	  {
-		  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-		  HAL_Delay(250);
-	  }
-
-	  // Disable the WAKEUP Pin
-	  HAL_PWR_DisableWakeUpPin(PWR_WAKEUP_PIN1);	// Disable PA.0
-  }
-
-  // Now enter to the standby mode
-  // clear the WakeUp Flag (WU)
-  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
-  printf("About to enter the standby mode\n\r");
-
-  for(uint8_t i = 0; i < 5; i++)
-  {
-	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  HAL_Delay(750);
-  }
-
-  // Enable the WAKEUP Pin
-  HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN1);	// Enable PA.0
-  printf("Standby mode is ON\n\r");
-
-  // Now enter to the standby mode
-  HAL_PWR_EnterSTANDBYMode();
-#endif
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -145,7 +112,8 @@ int main(void)
 	  printf("Hello count = %d \n", count);
 
 #ifdef SLEEP_Mode
-	  printf("Going into sleep Mode in 5 Seconds\n\r");
+	  str = "Going into sleep Mode in 5 Seconds\n\r";
+	  printf(str);
 
 	  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 	  HAL_Delay(5000);
@@ -161,7 +129,8 @@ int main(void)
 //	  HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);	// wake up from interrupt -> Btn = PA.0 (UserBtn)
 //	  HAL_ResumeTick();
 
-	  printf("Woke up from sleep Mode\n\r");
+	  str = "Woke up from sleep Mode\n\r";
+	  printf(str);
 
 	  for(int i = 0; i < 20; i++)
 	  {
@@ -263,7 +232,8 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	printf("WokeUp from Sleep by EXTI\r\n");
+	str = "WokeUp from Sleep by EXTI\r\n";
+	printf(str);
 }
 /* USER CODE END 4 */
 

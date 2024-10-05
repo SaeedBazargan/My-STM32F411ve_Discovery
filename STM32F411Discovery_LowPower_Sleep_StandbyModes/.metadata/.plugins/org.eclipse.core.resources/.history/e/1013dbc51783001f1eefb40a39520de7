@@ -31,8 +31,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define SLEEP_Mode					0
-#define STANDBY_Mode				1
+#define SLEEP_Mode					1
+#define STANDBY_Mode				0
 #define STOP_Mode					0
 /* USER CODE END PD */
 
@@ -109,28 +109,7 @@ int main(void)
 		  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 		  HAL_Delay(250);
 	  }
-
-	  // Disable the WAKEUP Pin
-	  HAL_PWR_DisableWakeUpPin(PWR_WAKEUP_PIN1);	// Disable PA.0
   }
-
-  // Now enter to the standby mode
-  // clear the WakeUp Flag (WU)
-  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
-  printf("About to enter the standby mode\n\r");
-
-  for(uint8_t i = 0; i < 5; i++)
-  {
-	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  HAL_Delay(750);
-  }
-
-  // Enable the WAKEUP Pin
-  HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN1);	// Enable PA.0
-  printf("Standby mode is ON\n\r");
-
-  // Now enter to the standby mode
-  HAL_PWR_EnterSTANDBYMode();
 #endif
   /* USER CODE END 2 */
 
@@ -263,7 +242,8 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	printf("WokeUp from Sleep by EXTI\r\n");
+	str = "WokeUp from Sleep by EXTI\r\n";
+	printf(str);
 }
 /* USER CODE END 4 */
 

@@ -1002,3 +1002,6 @@ java.lang.Exception: Resource '/LiveSWV' does not exist.
 
 !ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-10-05 14:32:38.844
 !MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 100000000; div: 50
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-10-05 16:19:51.190
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 100000000; div: 50

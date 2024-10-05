@@ -263,7 +263,8 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	printf("WokeUp from Sleep by EXTI\r\n");
+	str = "WokeUp from Sleep by EXTI\r\n";
+	printf(str);
 }
 /* USER CODE END 4 */
 
