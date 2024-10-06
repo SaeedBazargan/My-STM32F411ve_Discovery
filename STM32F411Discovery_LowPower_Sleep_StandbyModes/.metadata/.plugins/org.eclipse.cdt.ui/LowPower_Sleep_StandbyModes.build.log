@@ -1,10 +1,10 @@
-16:19:44 **** Incremental Build of configuration Debug for project LowPower_Sleep_StandbyModes ****
+10:22:59 **** Incremental Build of configuration Debug for project LowPower_Sleep_StandbyModes ****
 make -j20 all 
 arm-none-eabi-size  LowPower_Sleep_StandbyModes.elf 
    text	   data	    bss	    dec	    hex	filename
-  11144	    104	   1912	  13160	   3368	LowPower_Sleep_StandbyModes.elf
+  10696	    104	   1912	  12712	   31a8	LowPower_Sleep_StandbyModes.elf
 Finished building: default.size.stdout
  
 
-16:19:44 Build Finished. 0 errors, 0 warnings. (took 157ms)
+10:22:59 Build Finished. 0 errors, 0 warnings. (took 133ms)
 

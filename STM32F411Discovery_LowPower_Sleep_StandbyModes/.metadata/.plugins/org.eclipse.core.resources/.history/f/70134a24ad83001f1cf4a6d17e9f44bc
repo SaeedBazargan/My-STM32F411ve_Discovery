@@ -97,7 +97,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-#if STANDBY_Mode
+#ifdef STANDBY_Mode
   if(__HAL_PWR_GET_FLAG(PWR_FLAG_SB) != RESET)
   {
 	  // If this flag is set means the MCU wake up from the standby mode
@@ -143,8 +143,7 @@ int main(void)
   HAL_SuspendTick();
 
   // Enter to the STOP Mode
-  HAL_PWR_EnterSTOPMode(PWR_LOWPOWERREGULATOR_ON, PWR_STOPENTRY_WFI);		// Stop mode with low power regulator ON, When i press the btn, EXTI gets triggered and MCU will wakeup from sleep
-  printf("xxxxxxxxxxxxxxxxx\n\r");
+  HAL_PWR_EnterSTOPMode(PWR_LOWPOWERREGULATOR_ON, PWR_STOPENTRY_WFI);		// Stop mode with low power regulator ON, Enter Stop mode with WFI instruction
 
   // Wakeup from stop mode
   SystemClock_Config();
@@ -171,7 +170,7 @@ int main(void)
 	  count++;
 	  printf("Hello count = %d \n", count);
 
-#if SLEEP_Mode
+#ifdef SLEEP_Mode
 	  printf("Going into sleep Mode in 5 Seconds\n\r");
 
 	  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
@@ -185,7 +184,7 @@ int main(void)
 	  HAL_PWR_EnableSleepOnExit();	// the processor re-enters SLEEP mode when an interruption handling is over. It is useful when the processor is expected to run only on interruptions handling.
 
 	  // Plan_2
-//	  HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);	// SLEEP mode with regulator ON, When i press the btn, EXTI gets triggered and MCU will wakeup from sleep
+//	  HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);	// SLEEP mode with regulator ON, Enter SLEEP mode with WFI instruction
 //	  HAL_ResumeTick();
 
 	  printf("wake up from sleep Mode\n\r");
@@ -286,12 +285,10 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-#if STANDBY_Mode
-	void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-	{
-		printf("wakeUp from Sleep by EXTI\r\n");
-	}
-#endif
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	printf("wakeUp from Sleep by EXTI\r\n");
+}
 /* USER CODE END 4 */
 
 /**
