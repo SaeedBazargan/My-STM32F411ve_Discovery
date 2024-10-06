@@ -1,0 +1,26 @@
+# Ignore Eclipse IDE files and folders
+/.metadata/
+/*.log
+*.bak
+*.swp
+*.swo
+*.swd
+
+
+# Ignore STM32Cube generated files
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.o
+*.d
+*.obj
+*.a
+*.axf
+*.sct
+
+# Ignore build directories
+build/
+Debug/
+Release/
