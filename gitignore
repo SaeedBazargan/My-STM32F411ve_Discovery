@@ -1,0 +1,16 @@
+STM32F411Discovery_CustomBootloader/Application/.settings
+STM32F411Discovery_CustomBootloader/Application/*.ld
+
+STM32F411Discovery_CustomBootloader/Bootloader/.metadata
+STM32F411Discovery_CustomBootloader/Bootloader/Bootloader/.settings
+STM32F411Discovery_CustomBootloader/Bootloader/Bootloader/*.ld
+
+STM32F411Discovery_LowPower_Sleep_StandbyModes/.metadata
+
+
+
+.metadata/
+.settings/
+*.ld
+
+
