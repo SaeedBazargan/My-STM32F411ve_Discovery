@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;STM32F411Discovery_FreeRTOS&apos;" deleteContents="false" description="Delete resource &apos;STM32F411Discovery_FreeRTOS&apos;" element1="/STM32F411Discovery_FreeRTOS" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1727599487450"/>&#x0A;<refactoring comment="Delete resource &apos;FreeRTOS_Stm32F411Disco&apos;" deleteContents="false" description="Delete resource &apos;FreeRTOS_Stm32F411Disco&apos;" element1="/FreeRTOS_Stm32F411Disco" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1727599492900"/>
-</session>
