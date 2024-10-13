@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stdbool.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,6 +45,7 @@
 
 /* USER CODE BEGIN PV */
 uint8_t timeCount = 0;
+volatile bool enterSleepMode = false;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -100,6 +101,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  if(enterSleepMode)
+	  {
+		  enterSleepMode = false;
+		  HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);
+	  }
+
   }
   /* USER CODE END 3 */
 }
@@ -152,19 +159,36 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-	if(htim->Instance == &htim11)
+	if(htim == &htim11)
 	{
 		timeCount++;
 		if(timeCount == 5)
 		{
-			// toDo
-			// Sleep Now
+			HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
+
+//			htim11.Instance -> DIER &= ~(TIM_DIER_UIE);
+			HAL_TIM_Base_Stop_IT(&htim11);
+
+			HAL_SuspendTick();
+			enterSleepMode = true;
 		}
 	}
 }
 //<---- ------------------------------------ ---->
-// toDo
-// Ext interrupt and wake-up
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	HAL_ResumeTick();
+
+	HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
+
+//	htim11.Instance -> DIER |= (TIM_DIER_UIE);
+	HAL_TIM_Base_Start_IT(&htim11);
+	timeCount = 0;
+
+}
+//<---- ------------------------------------ ---->
 
 /* USER CODE END 4 */
 
