@@ -1,0 +1,7 @@
+DeviceConfigurationTool..OffLineMode=true
+DeviceConfigurationTool..UpdaterCheck=true
+DeviceConfigurationTool..UpdaterCheckInterval=5
+DeviceConfigurationTool..UpdaterDataRefresh=dataRefreshNone
+DeviceConfigurationTool..UpdaterDataRefreshInterfval=3
+DeviceConfigurationTool.AskToSwitchToCubeMxPerspective=false
+eclipse.preferences.version=1

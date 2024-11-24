@@ -1,0 +1,10 @@
+20:06:57 **** Incremental Build of configuration Debug for project LCD_TFT_2_Inch ****
+make -j4 all 
+arm-none-eabi-size  LCD_TFT_2_Inch.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28408	     24	   1680	  30112	   75a0	LCD_TFT_2_Inch.elf
+Finished building: default.size.stdout
+ 
+
+20:06:57 Build Finished. 0 errors, 0 warnings. (took 328ms)
+

@@ -1,0 +1,199 @@
+19:49:30 **** Build of configuration Debug for project LCD_TFT_2_Inch ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411vetx.d" -MT"Core/Startup/startup_stm32f411vetx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411vetx.o" "../Core/Startup/startup_stm32f411vetx.s"
+arm-none-eabi-gcc "../Core/Src/fonts.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/fonts.d" -MT"Core/Src/fonts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/fonts.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Core/Src/tft.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tft.d" -MT"Core/Src/tft.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tft.o"
+../Core/Src/tft.c:40:10: fatal error: stm32f1xx_hal.h: No such file or directory
+   40 | #include "stm32f1xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:40: Core/Src/tft.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:49:55 **** Incremental Build of configuration Debug for project LCD_TFT_2_Inch ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/tft.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tft.d" -MT"Core/Src/tft.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tft.o"
+../Core/Src/tft.c: In function 'readReg':
+../Core/Src/tft.c:411:13: warning: unused variable 'lo' [-Wunused-variable]
+  411 |     uint8_t lo;
+      |             ^~
+../Core/Src/tft.c: In function 'tft_init':
+../Core/Src/tft.c:2196:30: warning: unused variable 'ILI9481_RGB_regValues' [-Wunused-variable]
+ 2196 |         static const uint8_t ILI9481_RGB_regValues[]  = {    // 320x480
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/tft.c:2182:30: warning: unused variable 'ILI9481_CMO35_regValues' [-Wunused-variable]
+ 2182 |         static const uint8_t ILI9481_CMO35_regValues[]  = {    // 320480
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/tft.c:2171:30: warning: unused variable 'ILI9481_AUO317_regValues' [-Wunused-variable]
+ 2171 |         static const uint8_t ILI9481_AUO317_regValues[]  = {    // 320x480
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/tft.c:2159:30: warning: unused variable 'ILI9481_PVI35_regValues' [-Wunused-variable]
+ 2159 |         static const uint8_t ILI9481_PVI35_regValues[]  = {    // 320x480
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/tft.c:2147:30: warning: unused variable 'ILI9481_CPT29_regValues' [-Wunused-variable]
+ 2147 |         static const uint8_t ILI9481_CPT29_regValues[]  = {    // 320x430
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/tft.c:2066:30: warning: unused variable 'ILI9341_regValues_ada' [-Wunused-variable]
+ 2066 |         static const uint8_t ILI9341_regValues_ada[]  = {        // Adafruit_TFTLCD only works with EXTC=0
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/tft.c:1152:30: warning: unused variable 'ST7789_regValues_arcain6' [-Wunused-variable]
+ 1152 |         static const uint8_t ST7789_regValues_arcain6[]  = {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/tft.c:444:13: warning: variable 'dummy' set but not used [-Wunused-but-set-variable]
+  444 |         int dummy=0;
+      |             ^~~~~
+../Core/Src/tft.c: In function 'readID':
+../Core/Src/tft.c:2562:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 2562 |     if (ret == 0x1526)          //R61526 [xx 06 15 26] if I have written NVM
+      |     ^~
+../Core/Src/tft.c:2564:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 2564 |         if (ret == 0x89F0)          //ST7735S: [xx 7C 89 F0]
+      |         ^~
+../Core/Src/tft.c:2498:19: warning: unused variable 'ret2' [-Wunused-variable]
+ 2498 |     uint16_t ret, ret2;
+      |                   ^~~~
+../Core/Src/tft.c: In function 'readGRAM':
+../Core/Src/tft.c:2597:22: warning: unused variable 'tmp' [-Wunused-variable]
+ 2597 |     uint8_t r, g, b, tmp;
+      |                      ^~~
+../Core/Src/tft.c: In function 'setRotation':
+../Core/Src/tft.c:2781:10: warning: label 'common_ORG' defined but not used [-Wunused-label]
+ 2781 |          common_ORG:
+      |          ^~~~~~~~~~
+../Core/Src/tft.c:2661:28: warning: unused variable 'REV' [-Wunused-variable]
+ 2661 |    uint16_t GS, SS_v, ORG, REV = _lcd_rev;
+      |                            ^~~
+../Core/Src/tft.c: In function 'vertScroll':
+../Core/Src/tft.c:2889:13: warning: variable 'sea' set but not used [-Wunused-but-set-variable]
+ 2889 |     int16_t sea = top;
+      |             ^~~
+../Core/Src/tft.c: In function 'drawChar':
+../Core/Src/tft.c:212:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  212 | #define pgm_read_pointer(addr) ((void *)pgm_read_word(addr))
+      |                                 ^
+../Core/Src/tft.c:3614:43: note: in expansion of macro 'pgm_read_pointer'
+ 3614 |         GFXglyph *glyph  = &(((GFXglyph *)pgm_read_pointer(&gfxFont->glyph))[c]);
+      |                                           ^~~~~~~~~~~~~~~~
+../Core/Src/tft.c:212:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  212 | #define pgm_read_pointer(addr) ((void *)pgm_read_word(addr))
+      |                                 ^
+../Core/Src/tft.c:3615:39: note: in expansion of macro 'pgm_read_pointer'
+ 3615 |         uint8_t  *bitmap = (uint8_t *)pgm_read_pointer(&gfxFont->bitmap);
+      |                                       ^~~~~~~~~~~~~~~~
+../Core/Src/tft.c: In function 'write':
+../Core/Src/tft.c:212:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  212 | #define pgm_read_pointer(addr) ((void *)pgm_read_word(addr))
+      |                                 ^
+../Core/Src/tft.c:3666:50: note: in expansion of macro 'pgm_read_pointer'
+ 3666 |                 GFXglyph *glyph = &(((GFXglyph *)pgm_read_pointer(
+      |                                                  ^~~~~~~~~~~~~~~~
+../Core/Src/tft.c: In function 'charBounds':
+../Core/Src/tft.c:212:33: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  212 | #define pgm_read_pointer(addr) ((void *)pgm_read_word(addr))
+      |                                 ^
+../Core/Src/tft.c:3735:50: note: in expansion of macro 'pgm_read_pointer'
+ 3735 |                 GFXglyph *glyph = &(((GFXglyph *)pgm_read_pointer(
+      |                                                  ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LCD_TFT_2_Inch.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Bazar\Desktop\STM32\STM32F411Discovery\My-STM32F411ve_Discovery\STM32F411Discovery_LCD_TFT_2-4_Inch\LCD_TFT_2_Inch\LCD_TFT_2_Inch\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_TFT_2_Inch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/tft.o: in function `delay':
+C:/Users/Bazar/Desktop/STM32/STM32F411Discovery/My-STM32F411ve_Discovery/STM32F411Discovery_LCD_TFT_2-4_Inch/LCD_TFT_2_Inch/LCD_TFT_2_Inch/Debug/../Core/Inc/user_setting.h:49: multiple definition of `delay'; ./Core/Src/main.o:C:/Users/Bazar/Desktop/STM32/STM32F411Discovery/My-STM32F411ve_Discovery/STM32F411Discovery_LCD_TFT_2-4_Inch/LCD_TFT_2_Inch/LCD_TFT_2_Inch/Debug/../Core/Inc/user_setting.h:49: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: LCD_TFT_2_Inch.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+19:50:45 **** Incremental Build of configuration Debug for project LCD_TFT_2_Inch ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LCD_TFT_2_Inch.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Bazar\Desktop\STM32\STM32F411Discovery\My-STM32F411ve_Discovery\STM32F411Discovery_LCD_TFT_2-4_Inch\LCD_TFT_2_Inch\LCD_TFT_2_Inch\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_TFT_2_Inch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_TFT_2_Inch.elf
+ 
+arm-none-eabi-size  LCD_TFT_2_Inch.elf 
+arm-none-eabi-objdump -h -S LCD_TFT_2_Inch.elf  > "LCD_TFT_2_Inch.list"
+   text	   data	    bss	    dec	    hex	filename
+   7368	     12	   1644	   9024	   2340	LCD_TFT_2_Inch.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_TFT_2_Inch.list
+ 
+19:58:12 **** Incremental Build of configuration Debug for project LCD_TFT_2_Inch ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:44: warning: pointer targets in passing argument 5 of 'printnewtstr' differ in signedness [-Wpointer-sign]
+  117 |   printnewtstr(100, RED, &mono12x7bold, 2, "Hello MRL!");
+      |                                            ^~~~~~~~~~~~
+      |                                            |
+      |                                            char *
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/tft.h:98:92: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   98 | void printnewtstr (int row, uint16_t txtcolor, const GFXfont *f, uint8_t txtsize, uint8_t *str);
+      |                                                                                   ~~~~~~~~~^~~
+arm-none-eabi-gcc -o "LCD_TFT_2_Inch.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Bazar\Desktop\STM32\STM32F411Discovery\My-STM32F411ve_Discovery\STM32F411Discovery_LCD_TFT_2-4_Inch\LCD_TFT_2_Inch\LCD_TFT_2_Inch\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_TFT_2_Inch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_TFT_2_Inch.elf
+ 
+arm-none-eabi-size  LCD_TFT_2_Inch.elf 
+arm-none-eabi-objdump -h -S LCD_TFT_2_Inch.elf  > "LCD_TFT_2_Inch.list"
+   text	   data	    bss	    dec	    hex	filename
+  28408	     24	   1680	  30112	   75a0	LCD_TFT_2_Inch.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_TFT_2_Inch.list
+ 
+19:59:23 **** Incremental Build of configuration Debug for project LCD_TFT_2_Inch ****
+make -j4 all 
+arm-none-eabi-size  LCD_TFT_2_Inch.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28408	     24	   1680	  30112	   75a0	LCD_TFT_2_Inch.elf
+Finished building: default.size.stdout
+ 
+20:06:52 **** Incremental Build of configuration Debug for project LCD_TFT_2_Inch ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:45: warning: pointer targets in passing argument 5 of 'printnewtstr' differ in signedness [-Wpointer-sign]
+  117 |   printnewtstr(100, BLUE, &mono12x7bold, 2, "Maryam ;)");
+      |                                             ^~~~~~~~~~~
+      |                                             |
+      |                                             char *
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/tft.h:98:92: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   98 | void printnewtstr (int row, uint16_t txtcolor, const GFXfont *f, uint8_t txtsize, uint8_t *str);
+      |                                                                                   ~~~~~~~~~^~~
+arm-none-eabi-gcc -o "LCD_TFT_2_Inch.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Bazar\Desktop\STM32\STM32F411Discovery\My-STM32F411ve_Discovery\STM32F411Discovery_LCD_TFT_2-4_Inch\LCD_TFT_2_Inch\LCD_TFT_2_Inch\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_TFT_2_Inch.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_TFT_2_Inch.elf
+ 
+arm-none-eabi-size  LCD_TFT_2_Inch.elf 
+arm-none-eabi-objdump -h -S LCD_TFT_2_Inch.elf  > "LCD_TFT_2_Inch.list"
+   text	   data	    bss	    dec	    hex	filename
+  28408	     24	   1680	  30112	   75a0	LCD_TFT_2_Inch.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_TFT_2_Inch.list
+ 
+20:06:57 **** Incremental Build of configuration Debug for project LCD_TFT_2_Inch ****
+make -j4 all 
+arm-none-eabi-size  LCD_TFT_2_Inch.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28408	     24	   1680	  30112	   75a0	LCD_TFT_2_Inch.elf
+Finished building: default.size.stdout
+ 
