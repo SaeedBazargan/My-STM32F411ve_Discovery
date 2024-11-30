@@ -1,0 +1,10 @@
+15:36:53 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-size  SDcard_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20980	    128	   7776	  28884	   70d4	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+
+15:36:53 Build Finished. 0 errors, 0 warnings. (took 132ms)
+

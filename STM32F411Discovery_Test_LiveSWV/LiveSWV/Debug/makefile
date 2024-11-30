@@ -60,8 +60,8 @@ all: main-build
 main-build: LiveSWV.elf secondary-outputs
 
 # Tool invocations
-LiveSWV.elf LiveSWV.map: $(OBJS) $(USER_OBJS) D:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_Test_LiveSWV\LiveSWV\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "LiveSWV.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_Test_LiveSWV\LiveSWV\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LiveSWV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+LiveSWV.elf LiveSWV.map: $(OBJS) $(USER_OBJS) E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_Test_LiveSWV\LiveSWV\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "LiveSWV.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_Test_LiveSWV\LiveSWV\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LiveSWV.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

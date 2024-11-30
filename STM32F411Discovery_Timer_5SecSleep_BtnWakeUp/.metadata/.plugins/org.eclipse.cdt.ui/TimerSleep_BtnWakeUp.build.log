@@ -1,0 +1,10 @@
+15:10:55 **** Incremental Build of configuration Debug for project TimerSleep_BtnWakeUp ****
+make -j20 all 
+arm-none-eabi-size  TimerSleep_BtnWakeUp.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7744	     12	   1644	   9400	   24b8	TimerSleep_BtnWakeUp.elf
+Finished building: default.size.stdout
+ 
+
+15:10:55 Build Finished. 0 errors, 0 warnings. (took 130ms)
+
