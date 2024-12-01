@@ -43,59 +43,58 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-SPI_HandleTypeDef hspi1;
+SPI_HandleTypeDef hspi2;
 
 /* USER CODE BEGIN PV */
-uint8_t count = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_SPI1_Init(void);
+static void MX_SPI2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int _write(int file, char *ptr, int len)
-{
-	int i = 0;
-	for(i = 0; i < len; i++)
-	{
-		ITM_SendChar(*ptr++);
-	}
-	return len;
-}
-// <---- ----------------------------------------------- ---->
-FATFS fs; 			// file system
-FIL fil;			// file
-FRESULT fresult;	// to store the result
-char buffer[1024];	// to store data
+FATFS filesystem;  		// file system
+FIL file; 				// File
+FRESULT fresult;  		// result
+UINT br, bw;  			// File read/write count
 
-UINT br, bw;		// file read/write count
-
-// <---- --- Capacity related variables --- ---->
-FATFS* pfs;
+// <---- --- capacity related --- ---->
+FATFS *pfs;
 DWORD fre_clust;
 uint32_t total, free_space;
 
-// <---- --- to find the size of data in the buffer --- ---->
-int bufsize(char* buff)
+#define BUFFER_SIZE 2048
+char buffer[BUFFER_SIZE];  // to store strings..
+
+int bufsize(char *buf)
 {
 	int i = 0;
-	while(*buff++ != '\0')
+	while (*buf++ != '\0')
 		i++;
 
 	return i;
 }
 
-// <---- --- clear buffer --- ---->
-void buf_clear(void)
+void clear_buffer(void)
 {
-	for(int i = 0; i < 1024; i++)
+	for(int i = 0; i < BUFFER_SIZE; i++)
 		buffer[i] = '\0';
+}
+
+// <---- --- SWV Print --- ---->
+int _write(int file, char *ptr, int len)
+{
+	for(int i = 0; i < len; i++)
+	{
+		ITM_SendChar(*ptr++);
+	}
+	return len;
 }
 /* USER CODE END 0 */
 
@@ -128,24 +127,86 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_SPI1_Init();
+  MX_SPI2_Init();
   MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
-  // <---- --- Mount SD Card --- ---->
-  fresult = f_mount(&fs, "", 0);
-  if(fresult != FR_OK)
-	  printf("error in mounting SD Card = %d \n", fresult);
-  printf("SD Card mounting successfully = %d \n", fresult);
-  /* USER CODE END 2 */
-  // <---- --- Card capacity details --- ---->
-  // <---- --- Check free space --- ---->
-  f_getfree("", &fre_clust, &pfs);
+  	HAL_Delay (500);
 
-  total = (uint32_t)((pfs->n_fatent - 2) * pfs->csize * 0.5);
-  printf("SD Card total size = %d \n", total);
-  buf_clear();
-  free_space = (uint32_t)(fre_clust * pfs->csize *  0.5);
-  printf("SD Card free space = %d \n", free_space);
+  	fresult = f_mount(&filesystem, "/", 0);
+  	if(fresult != FR_OK)
+  		printf("\t Error! in mounting SD Card... %d \n", fresult);
+  	else
+  		printf("\t SD Card mounted successfully... %d \n", fresult);
+
+  	// <---- -------------------------- Card capacity details -------------------------- ---->
+  	// <---- --- Check free space --- ---->
+  	f_getfree("", &fre_clust, &pfs);
+
+  	total = (uint32_t)((pfs->n_fatent - 2) * pfs->csize * 0.5);
+  	printf("\t SD Card Total Size: \t%lu \n", total);
+  	clear_buffer();
+
+  	free_space = (uint32_t)(fre_clust * pfs->csize * 0.5);
+  	printf("\t SD Card Free Space: \t%lu \n", free_space);
+  	clear_buffer();
+
+  	// <---- -------------------------- The following operation is using PUTS and GETS -------------------------- ---->
+  	// <---- --- Open file to write or create if it doesn't exist --- ---->
+    fresult = f_open(&file, "/sbzrgn.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE);
+  	if (fresult == FR_OK)
+  		printf("\t sbzrgn.txt is open and the data is shown below %d \n", fresult);
+  	else
+  		printf("\t Error! sbzrgn.txt is not open %d \n", fresult);
+
+    // <---- --- Writing text --- ---->
+  	f_puts("This data is from the sbzrgn.txt. And it was written using ""f_puts"" ", &file);
+
+  	// <---- --- Close file --- ---->
+  	fresult = f_close(&file);
+  	if (fresult == FR_OK)
+  		printf("\t sbzrgn.txt created and the data is written %d \n", fresult);
+  	else
+  		printf("\t Error! sbzrgn.txt not created %d \n", fresult);
+
+  	// <---- --- Open file to read --- ---->
+  	fresult = f_open(&file, "/sbzrgn.txt", FA_READ);
+
+  	// <---- --- Read string from the file --- ---->
+  	f_gets(buffer, f_size(&file), &file);
+  	printf("\t string is... %s \n", buffer);
+
+  	// <---- --- Close file --- ---->
+  	f_close(&file);
+  	clear_buffer();
+
+  	// <---- -------------------------- The following operation is using f_write and f_read -------------------------- ---->
+  	// <---- --- Create second file with read write access and open it --- ---->
+  	fresult = f_open(&file, "/MRL.txt", FA_CREATE_ALWAYS | FA_WRITE);
+
+  	// <---- --- Writing text --- ---->
+  	strcpy (buffer, "This is MRL.txt, written using ""f_write"" and it says Hello from MRL \n");
+  	fresult = f_write(&file, buffer, sizeof(buffer), &bw);
+  	printf("\t MRL.txt created and data is written %d \n", fresult);
+
+  	// <---- --- Close file --- ---->
+  	f_close(&file);
+  	clear_buffer();
+
+  	// <---- --- Open second file to read --- ---->
+  	fresult = f_open(&file, "/MRL.txt", FA_READ);
+  	if (fresult == FR_OK)
+  		printf("\t MRL.txt is open and the data is shown below %d \n", fresult);
+  	else
+  		printf("\t Error! MRL.txt is not open %d \n", fresult);
+
+  	// <---- --- Read data from the file --- ---->
+  	f_read (&file, buffer, f_size(&file), &br);
+  	printf("\t string is... %s \n", buffer);
+
+  	// <---- --- Close file --- ---->
+  	f_close(&file);
+  	clear_buffer();
+  /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -154,10 +215,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  count++;
-	  printf("Hello MRL = %d \n", count);
-	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
@@ -208,40 +265,40 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief SPI1 Initialization Function
+  * @brief SPI2 Initialization Function
   * @param None
   * @retval None
   */
-static void MX_SPI1_Init(void)
+static void MX_SPI2_Init(void)
 {
 
-  /* USER CODE BEGIN SPI1_Init 0 */
+  /* USER CODE BEGIN SPI2_Init 0 */
 
-  /* USER CODE END SPI1_Init 0 */
+  /* USER CODE END SPI2_Init 0 */
 
-  /* USER CODE BEGIN SPI1_Init 1 */
+  /* USER CODE BEGIN SPI2_Init 1 */
 
-  /* USER CODE END SPI1_Init 1 */
-  /* SPI1 parameter configuration*/
-  hspi1.Instance = SPI1;
-  hspi1.Init.Mode = SPI_MODE_MASTER;
-  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
-  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
-  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_8;
-  hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
-  hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
-  hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-  hspi1.Init.CRCPolynomial = 10;
-  if (HAL_SPI_Init(&hspi1) != HAL_OK)
+  /* USER CODE END SPI2_Init 1 */
+  /* SPI2 parameter configuration*/
+  hspi2.Instance = SPI2;
+  hspi2.Init.Mode = SPI_MODE_MASTER;
+  hspi2.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi2.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi2.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi2.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi2.Init.NSS = SPI_NSS_SOFT;
+  hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_8;
+  hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi2.Init.CRCPolynomial = 10;
+  if (HAL_SPI_Init(&hspi2) != HAL_OK)
   {
     Error_Handler();
   }
-  /* USER CODE BEGIN SPI1_Init 2 */
+  /* USER CODE BEGIN SPI2_Init 2 */
 
-  /* USER CODE END SPI1_Init 2 */
+  /* USER CODE END SPI2_Init 2 */
 
 }
 
@@ -258,28 +315,20 @@ static void MX_GPIO_Init(void)
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOH_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
+  __HAL_RCC_GPIOE_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(SPI1_NSS_GPIO_Port, SPI1_NSS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_15, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : SPI1_NSS_Pin */
-  GPIO_InitStruct.Pin = SPI1_NSS_Pin;
+  /*Configure GPIO pin : PE15 */
+  GPIO_InitStruct.Pin = GPIO_PIN_15;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(SPI1_NSS_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : LED_Pin */
-  GPIO_InitStruct.Pin = LED_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

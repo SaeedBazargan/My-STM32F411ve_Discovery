@@ -1,62 +1,5 @@
-14:55:21 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+12:20:33 **** Build of configuration Debug for project SDcard_SPI ****
 make -j20 all 
-arm-none-eabi-size  SDcard_SPI.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10216	    104	   1912	  12232	   2fc8	SDcard_SPI.elf
-Finished building: default.size.stdout
- 
-14:55:24 **** Incremental Build of configuration Debug for project SDcard_SPI ****
-make -j20 all 
-arm-none-eabi-size  SDcard_SPI.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10216	    104	   1912	  12232	   2fc8	SDcard_SPI.elf
-Finished building: default.size.stdout
- 
-14:57:35 **** Incremental Build of configuration Debug for project SDcard_SPI ****
-make -j20 all 
-arm-none-eabi-size  SDcard_SPI.elf 
-   text	   data	    bss	    dec	    hex	filename
-  10216	    104	   1912	  12232	   2fc8	SDcard_SPI.elf
-Finished building: default.size.stdout
- 
-15:01:27 **** Incremental Build of configuration Debug for project SDcard_SPI ****
-make -j20 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: SDcard_SPI.elf
- 
-arm-none-eabi-size  SDcard_SPI.elf 
-arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
-   text	   data	    bss	    dec	    hex	filename
-  10216	    104	   1912	  12232	   2fc8	SDcard_SPI.elf
-Finished building: default.size.stdout
- 
-Finished building: SDcard_SPI.list
- 
-15:02:24 **** Incremental Build of configuration Debug for project SDcard_SPI ****
-make -j20 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: SDcard_SPI.elf
- 
-arm-none-eabi-size  SDcard_SPI.elf 
-arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
-   text	   data	    bss	    dec	    hex	filename
-  10216	    104	   1912	  12232	   2fc8	SDcard_SPI.elf
-Finished building: default.size.stdout
- 
-Finished building: SDcard_SPI.list
- 
-15:19:42 **** Clean-only build of configuration Debug for project SDcard_SPI ****
-make -j20 clean 
-rm -rf ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.su
-rm -rf ./Core/Startup/startup_stm32f411vetx.d ./Core/Startup/startup_stm32f411vetx.o
-rm -rf ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su
-rm -rf SDcard_SPI.elf SDcard_SPI.list SDcard_SPI.map default.size.stdout
- 
-15:19:42 **** Incremental Build of configuration Debug for project SDcard_SPI ****
-make -j20 all 
-arm-none-eabi-gcc "../Middlewares/Third_Party/FatFs/src/option/ccsbcs.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FatFs/src/option/ccsbcs.d" -MT"Middlewares/Third_Party/FatFs/src/option/ccsbcs.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FatFs/src/option/ccsbcs.o"
 arm-none-eabi-gcc "../Middlewares/Third_Party/FatFs/src/option/syscall.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FatFs/src/option/syscall.d" -MT"Middlewares/Third_Party/FatFs/src/option/syscall.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FatFs/src/option/syscall.o"
 arm-none-eabi-gcc "../Middlewares/Third_Party/FatFs/src/diskio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FatFs/src/diskio.d" -MT"Middlewares/Third_Party/FatFs/src/diskio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FatFs/src/diskio.o"
 arm-none-eabi-gcc "../Middlewares/Third_Party/FatFs/src/ff.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FatFs/src/ff.d" -MT"Middlewares/Third_Party/FatFs/src/ff.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FatFs/src/ff.o"
@@ -76,31 +19,6 @@ arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcp
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
-../FATFS/Target/user_diskio.c: In function 'USER_initialize':
-../FATFS/Target/user_diskio.c:84:12: warning: implicit declaration of function 'SD_disk_initialize'; did you mean 'disk_initialize'? [-Wimplicit-function-declaration]
-   84 |     return SD_disk_initialize(pdrv);
-      |            ^~~~~~~~~~~~~~~~~~
-      |            disk_initialize
-../FATFS/Target/user_diskio.c: In function 'USER_status':
-../FATFS/Target/user_diskio.c:98:12: warning: implicit declaration of function 'SD_disk_status'; did you mean 'disk_status'? [-Wimplicit-function-declaration]
-   98 |     return SD_disk_status(pdrv);
-      |            ^~~~~~~~~~~~~~
-      |            disk_status
-../FATFS/Target/user_diskio.c: In function 'USER_read':
-../FATFS/Target/user_diskio.c:118:12: warning: implicit declaration of function 'SD_disk_read'; did you mean 'disk_read'? [-Wimplicit-function-declaration]
-  118 |     return SD_disk_read(pdrv, buff, sector, count);
-      |            ^~~~~~~~~~~~
-      |            disk_read
-../FATFS/Target/user_diskio.c: In function 'USER_write':
-../FATFS/Target/user_diskio.c:140:12: warning: implicit declaration of function 'SD_disk_write'; did you mean 'disk_write'? [-Wimplicit-function-declaration]
-  140 |     return SD_disk_write(pdrv, buff, sector, count);
-      |            ^~~~~~~~~~~~~
-      |            disk_write
-../FATFS/Target/user_diskio.c: In function 'USER_ioctl':
-../FATFS/Target/user_diskio.c:160:12: warning: implicit declaration of function 'SD_disk_ioctl'; did you mean 'disk_ioctl'? [-Wimplicit-function-declaration]
-  160 |     return SD_disk_ioctl(pdrv, cmd, buff);
-      |            ^~~~~~~~~~~~~
-      |            disk_ioctl
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o"
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411vetx.d" -MT"Core/Startup/startup_stm32f411vetx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411vetx.o" "../Core/Startup/startup_stm32f411vetx.s"
 arm-none-eabi-gcc "../Core/Src/fatfs_sd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/fatfs_sd.d" -MT"Core/Src/fatfs_sd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/fatfs_sd.o"
@@ -116,42 +34,547 @@ Finished building target: SDcard_SPI.elf
 arm-none-eabi-size  SDcard_SPI.elf 
 arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
    text	   data	    bss	    dec	    hex	filename
-  15740	    128	   2024	  17892	   45e4	SDcard_SPI.elf
+  20864	    128	   2768	  23760	   5cd0	SDcard_SPI.elf
 Finished building: default.size.stdout
  
 Finished building: SDcard_SPI.list
  
-15:36:10 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+12:21:51 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-size  SDcard_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20864	    128	   2768	  23760	   5cd0	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+12:23:06 **** Incremental Build of configuration Debug for project SDcard_SPI ****
 make -j20 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:145:33: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-  145 |   printf("SD Card total size = %d \n", total);
-      |                                ~^      ~~~~~
-      |                                 |      |
-      |                                 int    uint32_t {aka long unsigned int}
-      |                                %ld
-../Core/Src/main.c:148:33: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-  148 |   printf("SD Card free space = %d \n", free_space);
-      |                                ~^      ~~~~~~~~~~
-      |                                 |      |
-      |                                 int    uint32_t {aka long unsigned int}
-      |                                %ld
 arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: SDcard_SPI.elf
  
 arm-none-eabi-size  SDcard_SPI.elf 
 arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
    text	   data	    bss	    dec	    hex	filename
-  20980	    128	   7776	  28884	   70d4	SDcard_SPI.elf
+  20876	    128	   2768	  23772	   5cdc	SDcard_SPI.elf
 Finished building: default.size.stdout
  
 Finished building: SDcard_SPI.list
  
-15:36:53 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+12:23:57 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  20876	    128	   2768	  23772	   5cdc	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+12:25:29 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  20868	    128	   2768	  23764	   5cd4	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+12:26:36 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  20868	    128	   2768	  23764	   5cd4	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+12:28:03 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28708	    128	   3328	  32164	   7da4	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+12:30:46 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  31316	    128	   3336	  34780	   87dc	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+12:32:13 **** Incremental Build of configuration Debug for project SDcard_SPI ****
 make -j20 all 
 arm-none-eabi-size  SDcard_SPI.elf 
    text	   data	    bss	    dec	    hex	filename
-  20980	    128	   7776	  28884	   70d4	SDcard_SPI.elf
+  31316	    128	   3336	  34780	   87dc	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+12:36:46 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:136:28: error: 'fs' undeclared (first use in this function); did you mean 'pfs'?
+  136 |         fresult = f_mount(&fs, "/", 0);
+      |                            ^~
+      |                            pfs
+../Core/Src/main.c:136:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+12:37:09 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  31312	    128	   3336	  34776	   87d8	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+12:42:00 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:173:16: warning: too many arguments for format [-Wformat-extra-args]
+  173 |         printf("string is = &c \n", buffer);
+      |                ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28672	    128	   3328	  32128	   7d80	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:08:42 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:140:24: warning: too many arguments for format [-Wformat-extra-args]
+  140 |                 printf("SD Card mounted successfully...\n", fresult);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:156:23: error: 'fil' undeclared (first use in this function); did you mean 'file'?
+  156 |     fresult = f_open(&fil, "sbzrgn.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE);
+      |                       ^~~
+      |                       file
+../Core/Src/main.c:156:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:173:16: warning: too many arguments for format [-Wformat-extra-args]
+  173 |         printf("string is = &c \n", buffer);
+      |                ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+15:09:40 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:140:24: warning: too many arguments for format [-Wformat-extra-args]
+  140 |                 printf("SD Card mounted successfully...\n", fresult);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:172:16: warning: too many arguments for format [-Wformat-extra-args]
+  172 |         printf("string is = &c \n", buffer);
+      |                ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28672	    128	   3328	  32128	   7d80	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:09:56 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:172:16: warning: too many arguments for format [-Wformat-extra-args]
+  172 |         printf("string is = &c \n", buffer);
+      |                ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28676	    128	   3328	  32132	   7d84	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:10:10 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:172:30: warning: format '%c' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+  172 |         printf("string is = %c \n", buffer);
+      |                             ~^      ~~~~~~
+      |                              |      |
+      |                              int    char *
+      |                             %s
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28676	    128	   3328	  32132	   7d84	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:10:24 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:172:30: warning: format '%d' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+  172 |         printf("string is = %d \n", buffer);
+      |                             ~^      ~~~~~~
+      |                              |      |
+      |                              int    char *
+      |                             %s
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28676	    128	   3328	  32132	   7d84	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:11:12 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:172:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+  172 |         printf("string is... %d \n", buffer);
+      |                              ~^      ~~~~~~
+      |                               |      |
+      |                               int    char *
+      |                              %s
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28676	    128	   3328	  32132	   7d84	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:11:24 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28676	    128	   3328	  32132	   7d84	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:12:00 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28676	    128	   3328	  32132	   7d84	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:12:10 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-size  SDcard_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28676	    128	   3328	  32132	   7d84	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+15:20:35 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:187:18: error: 'fil' undeclared (first use in this function); did you mean 'file'?
+  187 |         f_close(&fil);
+      |                  ^~~
+      |                  file
+../Core/Src/main.c:187:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+15:20:58 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29072	    128	   3336	  32536	   7f18	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:21:02 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-size  SDcard_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29072	    128	   3336	  32536	   7f18	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+15:23:49 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29088	    128	   3336	  32552	   7f28	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:25:19 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29088	    128	   3336	  32552	   7f28	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:25:23 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-size  SDcard_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29088	    128	   3336	  32552	   7f28	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+15:33:29 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29040	    128	   3720	  32888	   8078	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:33:36 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29040	    128	   5256	  34424	   8678	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:33:46 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-size  SDcard_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29040	    128	   5256	  34424	   8678	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+15:35:23 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-size  SDcard_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29040	    128	   5256	  34424	   8678	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+15:39:22 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28996	    128	   5256	  34380	   864c	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:40:02 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  28996	    128	   5256	  34380	   864c	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:43:30 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29000	    128	   5256	  34384	   8650	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:46:04 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29136	    128	   5256	  34520	   86d8	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:49:29 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../FATFS/Target/user_diskio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"FATFS/Target/user_diskio.d" -MT"FATFS/Target/user_diskio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FATFS/Target/user_diskio.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29136	    128	   5256	  34520	   86d8	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+15:49:32 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-size  SDcard_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29136	    128	   5256	  34520	   86d8	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+15:50:47 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../FATFS/Target/user_diskio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"FATFS/Target/user_diskio.d" -MT"FATFS/Target/user_diskio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "FATFS/Target/user_diskio.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29136	    128	   5256	  34520	   86d8	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+16:07:52 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-size  SDcard_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29136	    128	   5256	  34520	   86d8	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+16:10:33 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29192	    128	   5256	  34576	   8710	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+16:11:51 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SDcard_SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_SD-Card_SPI\SDcard_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SDcard_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SDcard_SPI.elf
+ 
+arm-none-eabi-size  SDcard_SPI.elf 
+arm-none-eabi-objdump -h -S SDcard_SPI.elf  > "SDcard_SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  29136	    128	   5256	  34520	   86d8	SDcard_SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SDcard_SPI.list
+ 
+16:12:39 **** Incremental Build of configuration Debug for project SDcard_SPI ****
+make -j20 all 
+arm-none-eabi-size  SDcard_SPI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29136	    128	   5256	  34520	   86d8	SDcard_SPI.elf
 Finished building: default.size.stdout
  

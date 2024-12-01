@@ -7,10 +7,10 @@
 #include "fatfs_sd.h"
 
 
-extern SPI_HandleTypeDef 	hspi1;
-#define HSPI_SDCARD		 	&hspi1
-#define	SD_CS_PORT			GPIOA
-#define SD_CS_PIN			GPIO_PIN_4
+extern SPI_HandleTypeDef 	hspi2;
+#define HSPI_SDCARD		 	&hspi2
+#define	SD_CS_PORT			GPIOE
+#define SD_CS_PIN			GPIO_PIN_15
 
 extern volatile uint16_t Timer1, Timer2;					/* 1ms Timer Counter */
 
