@@ -80,21 +80,6 @@ typedef enum
     L3GD20_FULLSCALE_SELECTION  = ((uint8_t)0x30)
 }L3GD20_Gyro_ScaleTypeDef;
 
-// <---- ------------ Full Scale Sensitivity ------------ ---->
-typedef enum
-{
-    L3GD20_SENSITIVITY_250DPS  = ((float)8.75f),         /*!< gyroscope sensitivity with 250 dps full scale [DPS/LSB]  */
-    L3GD20_SENSITIVITY_500DPS  = ((float)17.50f),        /*!< gyroscope sensitivity with 500 dps full scale [DPS/LSB]  */
-    L3GD20_SENSITIVITY_2000DPS = ((float)70.00f)        /*!< gyroscope sensitivity with 2000 dps full scale [DPS/LSB] */
-}L3GD20_Gyro_ScaleSensTypeDef;
-
-// <---- ------------ Endian Data Selection ------------ ---->
-typedef enum
-{
-    L3GD20_BLE_LSB = ((uint8_t)0x00),
-    L3GD20_BLE_MSB = ((uint8_t)0x40)
-}L3GD20_Gyro_EndianDataTypeDef;
-
 // <---- ------------ High Pass Filter Status ------------ ---->
 typedef enum
 {
@@ -141,11 +126,9 @@ typedef struct
 	L3GD20_Gyro_AxesTypeDef             Gyro_Axes;
 	L3GD20_Gyro_BandwidthTypeDef        Gyro_Bandwidth;
     L3GD20_Gyro_ScaleTypeDef            Gyro_Scale;
-    L3GD20_Gyro_ScaleSensTypeDef        Gyro_ScaleSensivity;
-    L3GD20_Gyro_EndianDataTypeDef       Gyro_EndianData;
-    L3GD20_Gyro_FilterStatusTypeDef     Gyro_Filter;
+    L3GD20_Gyro_FilterStatusTypeDef     Gyro_FilterEn;
     L3GD20_Gyro_FilterModeTypeDef       Gyro_FilterMode;
-    L3GD20_Gyro_FilterCutFreqTypeDef
+    L3GD20_Gyro_FilterCutFreqTypeDef	Gyro_FilterCutFreq;
 }L3GD20TypeDef;
 
 // <---- ------------ Main L3GD20 Functions ------------ ---->

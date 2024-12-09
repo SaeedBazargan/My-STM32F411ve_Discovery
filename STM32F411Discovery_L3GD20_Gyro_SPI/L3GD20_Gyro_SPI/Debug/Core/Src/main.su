@@ -1,0 +1,8 @@
+../Core/Src/main.c:151:5:main	8	static
+../Core/Src/main.c:200:6:SystemClock_Config	88	static
+../Core/Src/main.c:246:13:MX_SPI1_Init	8	static
+../Core/Src/main.c:284:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:322:6:Gyro_L3GD20_Init	8	static
+../Core/Src/main.c:338:6:Gyro_L3GD20_ReadData	8	static
+../Core/Src/main.c:347:6:L3GD20_loop	88	static
+../Core/Src/main.c:555:6:Error_Handler	4	static,ignoring_inline_asm
