@@ -60,8 +60,8 @@ all: main-build
 main-build: L3GD20_Gyro_SPI.elf secondary-outputs
 
 # Tool invocations
-L3GD20_Gyro_SPI.elf L3GD20_Gyro_SPI.map: $(OBJS) $(USER_OBJS) E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_L3GD20_Gyro_SPI\L3GD20_Gyro_SPI\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "L3GD20_Gyro_SPI.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\sbzrgn\My-STM32F411ve_Discovery\STM32F411Discovery_L3GD20_Gyro_SPI\L3GD20_Gyro_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L3GD20_Gyro_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+L3GD20_Gyro_SPI.elf L3GD20_Gyro_SPI.map: $(OBJS) $(USER_OBJS) C:\Users\Bazar\Desktop\STM32\STM32F411Discovery\My-STM32F411ve_Discovery\STM32F411Discovery_L3GD20_Gyro_SPI\L3GD20_Gyro_SPI\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "L3GD20_Gyro_SPI.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Bazar\Desktop\STM32\STM32F411Discovery\My-STM32F411ve_Discovery\STM32F411Discovery_L3GD20_Gyro_SPI\L3GD20_Gyro_SPI\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L3GD20_Gyro_SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

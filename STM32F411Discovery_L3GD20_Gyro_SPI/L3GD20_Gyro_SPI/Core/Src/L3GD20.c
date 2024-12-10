@@ -3,6 +3,7 @@
 // <---- ------------ Variables ------------ ---->
 uint16_t _CS_PinNumber = 0x0000;
 GPIO_TypeDef *_CS_GPIO;
+
 uint8_t temp;
 uint8_t transmit_buffer[2] = {0, 0};
 
@@ -34,7 +35,6 @@ L3GD20_Gyro_Result L3GD20_Init(SPI_HandleTypeDef* SPIx , GPIO_TypeDef *CS_GPIOx,
 
 	// <---- ------------ Control Register_2 ------------ ---->
 	// <---- ------------ High-Pass Filter Mode, High-Pass Filter Cut-off Frequency ------------ ---->
-
 	transmit_buffer[0] = L3GD20_CTRL_REG2_ADDR;
 	transmit_buffer[1] = datastruct -> Gyro_FilterMode | datastruct -> Gyro_FilterCutFreq;
 	L3GD20_WriteData(SPIx, transmit_buffer[0], transmit_buffer[1]);
