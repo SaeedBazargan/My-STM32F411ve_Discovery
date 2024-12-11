@@ -1,0 +1,3 @@
+../Core/Src/LSM303DL.c:10:25:LSM303DL_Init	24	static
+../Core/Src/LSM303DL.c:74:25:LSM303DL_ReadData	40	static
+../Core/Src/LSM303DL.c:86:25:LSM303DL_WriteData	32	static
